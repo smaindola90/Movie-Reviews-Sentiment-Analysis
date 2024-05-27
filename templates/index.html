@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Review Sentiment Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e6e6e6, #545454);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    textarea {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      display: inline-block; 
+      text-align: left; 
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #808080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #696969;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Review Sentiment Analysis</h1>
+    <form action="{{url_for('predict')}}" method="post">
+      <label for="review">Enter the Review to Predict the Sentiment</label>
+      <br>
+      <textarea id="review" name="review" rows="10" placeholder="Type your review here..."></textarea>
+      <br>
+      <button type="submit">Predict Review Sentiment</button>
+    </form>
+    <div>
+      {% if prediction_text %}
+        <h2>{{prediction_text}}</h2>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sentiment Analysis Project</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 20px;
+           line-height: 1.6;
+       }
+       h1, h2 {
+           color: #333;
+       }
+       code {
+           background-color: #facbee;
+           padding: 2px 4px;
+           font-family: Consolas, monospace;
+       }
+   </style>
+</head>
+<body>
+   <h1>IMDB Movie Reviews Sentiment Analysis Project</h1>
+
+   <h2>Introduction:</h2>
+   <p>Sentiment analysis, a subfield of natural language processing (NLP), aims to determine the sentiment expressed in a piece of text, whether it's positive or negative. In this project, we leverage the IMDB movie reviews dataset from Kaggle to predict the sentiment of movie reviews. The dataset contains a large number of reviews along with their corresponding sentiment labels.</p>
+
+   <h2>Objective:</h2>
+   <p>The objective of this project is to develop a sentiment analysis model that accurately predicts the sentiment of movie reviews. We aim to explore various text preprocessing techniques, text vectorization methods, and machine learning models to achieve this goal.</p>
+
+   <h2>Methodology:</h2>
+   <ol>
+       <li>
+           <h3>Data Collection and Preprocessing:</h3>
+           <ul>
+               <li>The IMDB movie reviews dataset from Kaggle is used as the primary data source.</li>
+               <li>The text data is preprocessed by lowercasing, removing HTML tags, urls, emails, formatting, special characters, punctuation, stopwords, and performing tokenization.</li>
+               <li>Text normalization technique stemming is applied to reduce word variations.</li>
+           </ul>
+       </li>
+       <li>
+           <h3>Feature Engineering and Text Vectorization:</h3>
+           <ul>
+               <li>Various text vectorization methods are explored, including Bag-of-Words (BoW), N-grams, and TF-IDF (Term Frequency-Inverse Document Frequency).</li>
+               <li>These methods convert text data into numerical vectors suitable for machine learning models.</li>
+           </ul>
+       </li>
+       <li>
+           <h3>Model Building:</h3>
+           <ul>
+               <li>Several machine learning algorithms are experimented with, including logistic regression, Bernoulli and multinomial naive bayes, random forests, and gradient boosting models (e.g., xgboost, lightgbm).</li>
+           </ul>
+       </li>
+       <li>
+           <h3>Model Evaluation:</h3>
+           <ul>
+               <li>The performance of each model is evaluated using metrics such as accuracy, F1-score and confusion matrix.</li>
+               <li>Cross-validation techniques are used to assess the generalization ability of the models.</li>
+           </ul>
+       </li>
+       <li>
+           <h3>Web Application Development:</h3>
+           <ul>
+               <li>Once a satisfactory model is trained, a web application is developed using Flask, a lightweight web framework for Python.</li>
+               <li>The web app allows users to input a movie review text, upon which the trained model predicts the sentiment (positive or negative) of the review.</li>
+               <li>The app provides a user-friendly interface for real-time sentiment analysis of movie reviews.</li>
+           </ul>
+       </li>
+   </ol>
+
+   <h2>Results:</h2>
+   <ul>
+       <li>The model achieves satisfactory performance in predicting the sentiment of movie reviews.</li>
+       <li>The web application provides a convenient way for users to analyze the sentiment of movie reviews on-the-fly.</li>
+   </ul>
+
+   <h2>Conclusion:</h2>
+   <p>In conclusion, this project demonstrates the successful application of NLP techniques for sentiment analysis of IMDB movie reviews. By exploring various text preprocessing methods, text vectorization techniques, and machine learning models, we have developed an effective sentiment analysis model. The web application built using Flask provides a user-friendly interface for real-time sentiment analysis, which can be useful for movie enthusiasts, critics, and filmmakers alike.</p>
+</body>
+</html>
