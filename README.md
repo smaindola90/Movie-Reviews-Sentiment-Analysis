@@ -1,4 +1,4 @@
-Test the app - To be updated soon
+Test the app - https://movie-reviews-sentiment-analysis-k6yk.onrender.com/predict
 
 # IMDB Movie Reviews Sentiment Analysis Project
 ## Introduction: 
