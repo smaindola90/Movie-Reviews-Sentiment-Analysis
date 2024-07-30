@@ -1,4 +1,4 @@
-Test the app - http://ec2-16-171-68-231.eu-north-1.compute.amazonaws.com:8000/predict
+Test the app - To be updated soon
 
 # IMDB Movie Reviews Sentiment Analysis Project
 ## Introduction: 
